@@ -1,6 +1,4 @@
-# Project Title
-
-This repository contains the code and data for the paper titled [Paper Title]. The code is currently unavailable as it is under review for publication. Once the paper is published, we will make the code available in this repository.
+This repository contains the code and data for the paper titled *Knowledge-based Bi-correction Model for Achieving Effective Lag-free Characteristic on Daily Urban Water Demand Forecasting*. The code is currently unavailable as it is under review for publication. Once the paper is published, we will make the code available in this repository.
 
 Regarding the data, we are in communication with the data owner to determine the best approach for sharing it. We appreciate your patience and understanding.
 
@@ -15,4 +13,4 @@ This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LI
 
 ## Contact
 
-For any inquiries, please contact [Your Name] at [Your Email Address].
+For any inquiries, please contact ShuanyuWu at shunyuwu@sjtu.edu.cn.
