@@ -6,4 +6,6 @@ class KBBCM(nn.Module):
         super(KBBCM, self).__init__()
 
     def forward(self, x):
+        # forward pass
         pass
+
