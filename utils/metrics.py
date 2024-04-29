@@ -77,19 +77,13 @@ def MPM(pred, true):
                 count_td += 1
     return (count_td + count_tu) / (count_fd + count_fu + count_tu + count_td)
 
-def EPERR(pred, true):
-    # print(np.abs(np.array(true[:-1] - np.array(true[1:]))) * np.abs(true[1:] - pred[1:]) / (np.abs(true[1:] - pred[1:])))
-    # return np.mean((np.abs(np.array(true[:-1] - np.array(true[1:]))) * np.abs(true[1:] - pred[1:])) / np.abs(true[1:] - pred[1:]))
+def MPTE(pred, true):
     a = np.array(true[:-1])
     b = np.array(true[1:])
     c = np.array(pred[1:])
-    # print(abs(b - c) - abs(b - a))
-    # _ = (abs(b - a) - abs(b - c)) / np.maximum(np.abs(b - c), 0.001)
     _ = (abs(b - a) - abs(b - c))
     output_errors = np.mean(_)
-    # return (DS(pred, true) / 100 * len(a)) * output_errors  # 左边一项反映趋势一致性
 
-    # 第二种算法,
     count = 0
     pred_delta = np.empty(len(a) - 1)
     true_delta = np.empty(len(a) - 1)
@@ -101,7 +95,6 @@ def EPERR(pred, true):
         else:
             pass
     return count / len(a)
-
 
 
 def metric(pred, true):
